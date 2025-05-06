@@ -33,20 +33,20 @@ mkdir -p "${REPO_PATH}/tracking_output"
 
 echo "All required directories have been created."
 
-conda env create -f environment.yml   
+conda env create -f environment.yml -y
 conda activate mononphm
 pip install gdown
 
 # Install pytorch with CUDA support
-conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=12.1 -c pytorch -c nvidia -y
 
 # Install PytorchGeometry and helper packages with CUDA support
-conda install pyg -c pyg
-pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu117.html
+conda install pyg -c pyg -y
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu117.html -y
 
 # Install Pytorch3D with CUDA support
-conda install -c fvcore -c iopath -c conda-forge fvcore iopath
-conda install pytorch3d=0.7.4 -c pytorch3d
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath -y
+conda install pytorch3d=0.7.4 -c pytorch3d -y
 
 pip install numpy==1.23
 pip install pyopengl==3.1.5
