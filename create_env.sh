@@ -43,7 +43,7 @@ conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=
 # Install PytorchGeometry and helper packages with CUDA support
 conda install pyg -c pyg -y
 pip uninstall -y pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv
-pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.1.1+cu121.html -y
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.1.1+cu121.html
 
 # Install Pytorch3D with CUDA support
 conda install -c fvcore -c iopath -c conda-forge fvcore iopath -y
