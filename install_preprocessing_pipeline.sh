@@ -8,13 +8,13 @@ pip install git+https://github.com/FacePerceiver/facer.git@main
 # MICA
 git clone git@github.com:Zielon/MICA.git
 cd MICA
-./install.sh
+bash install.sh
 cd ..
 
 # metrical tracker
 git clone git@github.com:Zielon/metrical-tracker.git
 cd metrical-tracker
-./install.sh
+bash install.sh
 # replace some file in the metrical tracker repository:
 cp ../replacement_code/config.py configs/config.py
 cp ../replacement_code/generate_dataset.py datasets/generate_dataset.py

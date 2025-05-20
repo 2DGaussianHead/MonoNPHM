@@ -51,3 +51,4 @@ pretrained/
 
 # 环境配置
 .env
+*.pth
