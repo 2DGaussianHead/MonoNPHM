@@ -8,3 +8,4 @@ gdown https://drive.google.com/drive/folders/1Mc7iYzMTKSRSoo0sxpdzCeySO1x4Wf4y -
 mkdir -p src/mononphm/preprocessing/MODNet/pretrained
 # Download MODNet pretrained model
 gdown https://drive.google.com/uc?id=1Nf1ZxeJZJL8Qx9KadcYYyEmmlKhTADxX -O src/mononphm/preprocessing/MODNet/pretrained/modnet_webcam_portrait_matting.ckpt
+
