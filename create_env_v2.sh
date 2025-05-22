@@ -29,4 +29,4 @@ pip install -e .
 
 pip install tyro opencv-python mediapy environs pyvista trimesh imageio scikit-image
 
-pip install point-cloud-utils distinctipy facer
+pip install point-cloud-utils distinctipy
