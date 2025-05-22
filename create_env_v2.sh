@@ -22,11 +22,14 @@ conda install -c fvcore -c iopath -c conda-forge fvcore iopath -y
 conda install pytorch3d -c pytorch3d -y
 # pip install git+https://github.com/facebookresearch/pytorch3d.git
 
-pip install numpy==1.23
 pip install pyopengl==3.1.5
 
 pip install -e .
 
 pip install tyro opencv-python mediapy environs pyvista trimesh imageio scikit-image
 
-pip install point-cloud-utils distinctipy facer
+pip install point-cloud-utils distinctipy
+
+pip install loguru insightface onnxruntime-gpu 
+pip install face_alignment tensorboard mediapipe chumpy
+pip install numpy==1.23

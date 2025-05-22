@@ -8,7 +8,7 @@ rm $MONONPHM_DATA_TRACKING/temp.zip
 
 
 # Download PIPNet model weights to the snapshots directory
-gdown https://drive.google.com/drive/folders/1Mc7iYzMTKSRSoo0sxpdzCeySO1x4Wf4y --folder -O src/mononphm/preprocessing/PIPnet/snapshots
+gdown https://drive.google.com/drive/folders/1Mc7iYzMTKSRSoo0sxpdzCeySO1x4Wf4y --folder -O src/mononphm/preprocessing/PIPNet/snapshots/WFLW
 
 # Create the pretrained directory for MODNet
 mkdir -p src/mononphm/preprocessing/MODNet/pretrained
