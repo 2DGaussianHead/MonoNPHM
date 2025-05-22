@@ -6,13 +6,13 @@ cd src/mononphm/preprocessing/
 pip install git+https://github.com/FacePerceiver/facer.git@main
 
 # MICA
-git clone git@github.com:Zielon/MICA.git
+git clone https://github.com/Zielon/MICA.git
 cd MICA
 bash install.sh
 cd ..
 
 # metrical tracker
-git clone git@github.com:Zielon/metrical-tracker.git
+git clone https://github.com/Zielon/metrical-tracker.git
 cd metrical-tracker
 bash install.sh
 # replace some file in the metrical tracker repository:
@@ -22,15 +22,16 @@ cp ../replacement_code/tracker.py tracker.py
 cd ..
 
 # normal predictor
-git clone git@github.com:boukhayma/face_normals.git
+git clone https://github.com/boukhayma/face_normals.git
 mkdir face_normals/pretrained_models/
 
 # MODNet for image matting
-git clone git@github.com:ZHKKKe/MODNet.git
+git clone https://github.com/ZHKKKe/MODNet.git
 
 # PIPnet
 git clone https://github.com/jhb86253817/PIPNet.git
 cd PIPNet/FaceBoxesV2/utils
+pip install Cython
 sh make.sh
 cd ../..
 mkdir snapshots
